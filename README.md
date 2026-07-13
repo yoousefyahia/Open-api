@@ -76,32 +76,6 @@ npm run dev
 
 ---
 
-## 🌐 API
-
-The application consumes an API generated from an **OpenAPI Specification**.
-
-Example endpoint:
-
-```http
-GET /pets
-```
-
-Response:
-
-```json
-{
-  "data": [
-    {
-      "id": "1",
-      "name": "Max",
-      "species": "DOG"
-    }
-  ]
-}
-```
-
----
-
 ## 📷 Current Screens
 
 * Home Page
