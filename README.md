@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🐾 Pet Adoption System
 
-## Getting Started
+A modern **Pet Adoption** application built with **Next.js**, **TypeScript**, **Tailwind CSS**, **TanStack Query**, and **OpenAPI**. The project demonstrates a scalable frontend architecture with type-safe API integration and a responsive user interface.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+* Display pets in responsive cards
+* View pet information
+* Type-safe API integration with OpenAPI
+* Data fetching with TanStack Query
+* Responsive UI using Tailwind CSS
+* Loading and error states
+* Ready for:
+
+  * Create Pet
+  * Update Pet
+  * Delete Pet
+  * Pagination
+  * Search & Filtering
+
+---
+
+## 🛠 Tech Stack
+
+* Next.js (App Router)
+* React
+* TypeScript
+* Tailwind CSS
+* TanStack Query
+* openapi-fetch
+* openapi-react-query
+* OpenAPI TypeScript
+
+---
+
+## 📁 Project Structure
+
+```text
+src/
+│
+├── app/
+│   ├── page.tsx
+│   └── pets/
+│       └── page.tsx
+│
+├── components/
+│
+├── hooks/
+│   └── use-pets.ts
+│
+├── lib/
+│   └── api/
+│       ├── client.ts
+│       ├── react-query.ts
+│       ├── query-client.ts
+│       └── schema.ts
+│
+└── styles/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git clone https://github.com/your-username/pet-adoption.git
 
-## Learn More
+cd pet-adoption
 
-To learn more about Next.js, take a look at the following resources:
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🌐 API
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The application consumes an API generated from an **OpenAPI Specification**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Example endpoint:
+
+```http
+GET /pets
+```
+
+Response:
+
+```json
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Max",
+      "species": "DOG"
+    }
+  ]
+}
+```
+
+---
+
+## 📷 Current Screens
+
+* Home Page
+* Pets Listing
+* Responsive Cards
+* Loading State
+* Error State
+
+---
+
+## 🔜 Future Improvements
+
+* Add Pet
+* Edit Pet
+* Delete Pet
+* Pet Details Page
+* Search
+* Filters
+* Server-side Pagination
+* Authentication
+* Dark Mode
